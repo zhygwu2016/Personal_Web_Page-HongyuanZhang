@@ -1,0 +1,61 @@
+body{
+  font-size: 16px;
+}
+
+.container{
+  max-width:880px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+header{
+  text-align: center;
+  background-color: #000;
+}
+
+header img{
+  max-width: 200px;
+  padding:1.5rem;
+  filter: invert(100%); /* invert the color of image */
+}
+
+.menu-toggle{
+  position:fixed;
+  top:1.4rem;
+  left:1rem;
+  z-index:4;
+}
+
+.menu{
+  background-color: #0096d6;
+  width:40%;
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: 2;
+}
+
+.open{
+  transform: translateX(0px);
+}
+
+nav {
+  position: absolute;
+  left: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav a{
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color:#fff;
+  display:block;
+  margin-bottom:10px;
+}
