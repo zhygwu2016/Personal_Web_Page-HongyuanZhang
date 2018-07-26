@@ -12,7 +12,7 @@ body{
 
 header{
   text-align: center;
-  background-color: #000;
+  background-color: #222;
 }
 
 header img{
@@ -20,6 +20,7 @@ header img{
   padding:1.5rem;
   filter: invert(100%); /* invert the color of image */
 }
+
 
 .menu-toggle{
   position:fixed;
