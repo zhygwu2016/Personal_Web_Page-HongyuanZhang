@@ -11,35 +11,48 @@
   </head>
 
   <body>
-
-    <header>
-      <a href="#" class="menu-toggle">
-        <img src="assets/images/menu-icon.svg">
-      </a>
-
-      <h1 class="matuanzhang-logo">
-        <a href="index.html">
-          <img src="assets/images/matuanzhangLogoBlack.png">
+    <div class="home">
+      <header class="header-desktop"></header>
+      <header class="header">
+        <a href="#" class="menu-toggle header-button">
+          <img src="assets/images/menu-icon.svg">
         </a>
-      </h1>
+        <h1 class="matuanzhang-logo header-button">
+          <a href="index.html">
+            <img src="assets/images/matuanzhangLogoWhite.png">
+          </a>
+        </h1>
+      </header>
+      <!-- <img src="assets/images/header_bg00.jpg" class="headerHelp" style="visibility: hidden;" /> -->
+    </div>
 
-    </header>
 
     <div class="menu">
       <nav>
         <a href="index.html">Home</a>
-        <a href="#">About Me</a>
+        <a href="#about">About Me</a>
+        <a href="#">Resume</a>
+        <a href="#">Photography</a>
+        <a href="#">Publication</a>
+        <a href="#">Contact</a>
       </nav>
     </div>
 
-    <div class="container">
-
+    <div class="aboutMe" id="about">
+      <div class="container heading">
+        <h1>
+          About Me
+        </h1>
+      </div>
+      <div class="container">
+        <p>
+        A graduate student at The George Washington University (GWU). Focusing on network front-end development and image processing. Living and studying around Washington D.C. A photographer from China.
+        </p>
+      </div>
     </div>
 
-
-
-    <footer>
-
+    <footer class="container">
+      <p>Copyright &copy; 2018</p>
     </footer>
 
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>

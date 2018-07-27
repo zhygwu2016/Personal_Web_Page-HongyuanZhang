@@ -1,37 +1,52 @@
+
 body{
   font-size: 16px;
 }
 
 .container{
-  max-width:880px;
+  max-width:960px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
+.home{
+  background-image: url(../assets/images/header_bg00.jpg);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+}
+
+.headerHelp{
+  width:100%;
+  top:0;
+}
+
 header{
   text-align: center;
-  background-color: #222;
+  /* background-color: #222;  */
 }
 
 header img{
   max-width: 200px;
   padding:1.5rem;
-  filter: invert(100%); /* invert the color of image */
 }
-
 
 .menu-toggle{
   position:fixed;
   top:1.4rem;
   left:1rem;
   z-index:4;
+  /* invert the color of image */
+  filter: invert(100%);
 }
 
 .menu{
   background-color: #0096d6;
-  width:40%;
+  width:30vw;
+  min-width: 330px;
   position:fixed;
   top:0;
   left:0;
@@ -53,10 +68,28 @@ nav {
 }
 
 nav a{
-  font-size: 2rem;
+  font-size: 36px;
   font-weight: 700;
   text-decoration: none;
   color:#fff;
   display:block;
-  margin-bottom:10px;
+  margin-bottom:25px;
+}
+
+.aboutMe{
+  background-color: #222;
+}
+
+.heading{
+  font-size: 100px;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  color:#fff;
+}
+
+.aboutMe p{
+  color:#fff;
+  font-size: 1.5rem;
+  padding-top:2rem;
+  padding-bottom:2rem;
 }
