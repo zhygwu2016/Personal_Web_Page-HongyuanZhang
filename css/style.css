@@ -1,6 +1,6 @@
-
 body{
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .container{
@@ -11,31 +11,31 @@ body{
   padding-right: 2rem;
 }
 
-.home{
-  background-image: url(../assets/images/header_bg00.jpg);
-  background-size: 100% auto;
-  background-position: center top;
+.scroll-to{
+  position: absolute;
+  /* left:50%; */
+  transform:translateX(-50%);
+  bottom:1.5rem;
+  width:4rem;
+  height:32px;
+  background-image:url(../assets/images/down-arrow.svg);
+  filter: invert(100%);
+  background-size: contain;
   background-repeat: no-repeat;
-  max-height: 100vh;
+  background-position: center;
+  transition: transform 0.5s ease;
 }
 
-.headerHelp{
-  width:100%;
-  top:0;
-}
-
-header{
-  text-align: center;
-  /* background-color: #222;  */
-}
-
-header img{
-  max-width: 200px;
-  padding:1.5rem;
+.scroll-to:hover{
+  transform: scale(1.2) translateX(-40%);
+  opacity:0.8 ;
 }
 
 .menu-toggle{
-  position:fixed;
+  /* position:fixed;
+  top:1.4rem;
+  left:1rem; */
+  position:absolute;
   top:1.4rem;
   left:1rem;
   z-index:4;
@@ -45,6 +45,7 @@ header img{
 
 .menu{
   background-color: #0096d6;
+  /* background-color: #004065; */
   width:30vw;
   min-width: 330px;
   position:fixed;
@@ -56,18 +57,22 @@ header img{
   z-index: 2;
 }
 
+.nav-item{
+  list-style-type: none;
+}
+
 .open{
   transform: translateX(0px);
 }
 
-nav {
+.navigation {
   position: absolute;
   left: 65px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-nav a{
+.navigation a{
   font-size: 36px;
   font-weight: 700;
   text-decoration: none;
@@ -82,9 +87,12 @@ nav a{
 
 .heading{
   font-size: 100px;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
   padding-top: 2rem;
   margin-bottom: 1rem;
-  color:#fff;
 }
 
 .aboutMe p{

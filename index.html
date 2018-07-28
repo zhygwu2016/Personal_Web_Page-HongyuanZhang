@@ -7,38 +7,62 @@
     <link rel="stylesheet" href="css/basscss-grid.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <div class="home">
-      <header class="header-desktop"></header>
+    <div class="home" id="home">
+
+      <header class="header-desktop container flex flex-column">
+
+      </header>
+
       <header class="header">
         <a href="#" class="menu-toggle header-button">
           <img src="assets/images/menu-icon.svg">
         </a>
         <h1 class="matuanzhang-logo header-button">
-          <a href="index.html">
+          <a href="#home">
             <img src="assets/images/matuanzhangLogoWhite.png">
           </a>
         </h1>
       </header>
+
+      <div class="home-title container pv6-l pv4-m pv2-s">
+        <h1>A Photographer.</h1>
+        <h1>A Coder.</h1>
+      </div>
       <!-- <img src="assets/images/header_bg00.jpg" class="headerHelp" style="visibility: hidden;" /> -->
+      <a href="#about" class="js-scroll scroll-to">
+        <!-- <svg width="62" height="34" xmlns="http://www.w3.org/2000/svg"><path d="M31 33.156l2.594-2.219 28-24L56.406.844 31 22.624 5.594.845.406 6.937l28 24z" fill-rule="nonzero" fill="#fff"/></svg> -->
+      </a>
     </div>
 
-
     <div class="menu">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#">Resume</a>
-        <a href="#">Photography</a>
-        <a href="#">Publication</a>
-        <a href="#">Contact</a>
+      <nav class="navigation">
+        <li class="nav-item">
+          <a href="#home" class="menu-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="menu-link">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="menu-link">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="menu-link">Photography</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="menu-link">Publication</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="menu-link">Contact</a>
+        </li>
       </nav>
     </div>
 
-    <div class="aboutMe" id="about">
+    <div class="aboutMe min-vh-100 pt5-ns" id="about">
       <div class="container heading">
         <h1>
           About Me

@@ -1,0 +1,32 @@
+.home{
+  background-image: url(../assets/images/header_bg00.jpg);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+header{
+  position: relative;
+  text-align: center;
+}
+
+header img{
+  max-width: 200px;
+  padding:1rem;
+}
+
+.home-title{
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  color:#fff;
+  /* -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #fff; */
+  font-size:8vw;
+}
+
+.home-title h1{
+  padding:10px;
+}
