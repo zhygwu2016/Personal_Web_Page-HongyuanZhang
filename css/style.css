@@ -13,7 +13,7 @@ body{
 
 .scroll-to{
   position: absolute;
-  /* left:50%; */
+  left:50%;
   transform:translateX(-50%);
   bottom:1.5rem;
   width:4rem;
@@ -31,73 +31,57 @@ body{
   opacity:0.8 ;
 }
 
-.menu-toggle{
-  /* position:fixed;
-  top:1.4rem;
-  left:1rem; */
-  position:absolute;
-  top:1.4rem;
-  left:1rem;
-  z-index:4;
-  /* invert the color of image */
-  filter: invert(100%);
+.fade{
+  opacity:0;
+  transition: opacity 1s ease;
 }
 
-.menu{
-  background-color: #0096d6;
-  /* background-color: #004065; */
-  width:30vw;
-  min-width: 330px;
-  position:fixed;
-  top:0;
-  left:0;
-  height:100%;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease;
-  z-index: 2;
-}
-
-.nav-item{
-  list-style-type: none;
-}
-
-.open{
-  transform: translateX(0px);
-}
-
-.navigation {
-  position: absolute;
-  left: 65px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.navigation a{
-  font-size: 36px;
-  font-weight: 700;
-  text-decoration: none;
-  color:#fff;
-  display:block;
-  margin-bottom:25px;
+.visible {
+  opacity: 1;
 }
 
 .aboutMe{
   background-color: #222;
+  position: relative;
 }
 
 .heading{
   font-size: 100px;
   font-family: 'HK-Grotesk-Bold', sans-serif;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #fff;
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .aboutMe p{
+  font-family: 'HK-Grotesk-Medium', sans-serif;
   color:#fff;
-  font-size: 1.5rem;
-  padding-top:2rem;
+  font-size: 1.2rem;
+  padding-top:1rem;
   padding-bottom:2rem;
+}
+
+.portrait{
+  padding:1rem 2rem 1.5rem 1.5rem;
+}
+
+.photography-ZHY{
+  background-color:#004065;
+  position:relative;
+}
+
+.publication-ZHY{
+  background-color:#c8b18b;
+  position:relative;
+}
+
+.contact-ZHY{
+  background-color:#008367;
+  position:relative;
+}
+
+footer{
+  min-height: 10vh;
 }

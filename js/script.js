@@ -52,3 +52,17 @@ $('.js-scroll').on('click',function(){
   });
   return false;
 });
+
+// here we grab all our images we want to fade in
+// we add the visible class which toggles the opacity
+// inView('.fade')
+//   .on('enter', img => img.classList.add('visible'))
+//   .on('exit', img => img.classList.remove('visible'));
+
+inView('.fade')
+  .on('enter', el => {
+    el.classList.add('visible');
+  })
+  .on('exit', el => {
+    el.classList.remove('visible');
+});

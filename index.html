@@ -13,11 +13,7 @@
 
   <body>
     <div class="home" id="home">
-
-      <header class="header-desktop container flex flex-column">
-
-      </header>
-
+      <header class="header-desktop container flex flex-column"></header>
       <header class="header">
         <a href="#" class="menu-toggle header-button">
           <img src="assets/images/menu-icon.svg">
@@ -51,32 +47,74 @@
           <a href="#" class="menu-link">Resume</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="menu-link">Photography</a>
+          <a href="#photography" class="menu-link">Photography</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="menu-link">Publication</a>
+          <a href="#publication" class="menu-link">Publication</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="menu-link">Contact</a>
+          <a href="#contact" class="menu-link">Contact</a>
         </li>
       </nav>
     </div>
 
     <div class="aboutMe min-vh-100 pt5-ns" id="about">
-      <div class="container heading">
-        <h1>
-          About Me
-        </h1>
+      <div class="container flex flex-wrap justify-between">
+        <div class="heading col-12">
+          <h1 class="fade">About Me</h1>
+        </div>
+        <div class="introduce-myself col-7">
+          <p class="fade">
+            I'm currently living in Washington D.C. and focusing on front-end
+            web development. As an international student from China, I have
+            obtained my Master's degree at The George Washington University in May 2018.
+            <br><br>
+            Except for writing code, I'm also a part-time photographer, providing
+            photos for stock photo agencies, like Getty Images. Besides,
+            I have published a <a href="#publication">book</a> about iPhone photography in China.
+            <br><br>
+            I'm looking for a job in front-end development, please take a look
+            at my <a href="resume.html">resume</a> if you're interested.
+          </p>
+        </div>
+        <div class="portrait col-5">
+          <img src="./assets/images/portrait-ZHY.jpg" class="fade">
+        </div>
       </div>
-      <div class="container">
-        <p>
-        A graduate student at The George Washington University (GWU). Focusing on network front-end development and image processing. Living and studying around Washington D.C. A photographer from China.
-        </p>
-      </div>
+      <a href="#photography" class="js-scroll scroll-to"></a>
     </div>
 
-    <footer class="container">
-      <p>Copyright &copy; 2018</p>
+    <div class="photography-ZHY min-vh-100" id="photography">
+      <div class="container flex flex-wrap justify-between">
+        <div class="heading col-12">
+          <h1>Photography</h1>
+        </div>
+      </div>
+      <a href="#publication" class="js-scroll scroll-to"></a>
+    </div>
+
+    <div class="publication-ZHY min-vh-100" id="publication">
+      <div class="container flex flex-wrap justify-between">
+        <div class="heading col-12">
+          <h1>Publication</h1>
+        </div>
+      </div>
+      <a href="#contact" class="js-scroll scroll-to"></a>
+    </div>
+
+    <div class="contact-ZHY min-vh-100" id="contact">
+      <div class="container flex flex-wrap justify-between">
+        <div class="heading col-12">
+          <h1>Contact</h1>
+        </div>
+      </div>
+      <a href="#footer" class="js-scroll scroll-to"></a>
+    </div>
+
+    <footer id="footer">
+      <div class="container flex flex-wrap justify-between">
+        <p>Copyright &copy; 2018</p>
+      </div>
     </footer>
 
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>

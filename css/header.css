@@ -30,3 +30,52 @@ header img{
 .home-title h1{
   padding:10px;
 }
+
+
+.menu-toggle{
+  position:fixed;
+  top:1.4rem;
+  left:1rem;
+  /* position:absolute; */
+  z-index:4;
+  /* invert the color of image */
+  filter: invert(100%);
+}
+
+.menu{
+  background-color: #0096d6;
+  /* background-color: #004065; */
+  width:30vw;
+  min-width: 330px;
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: 2;
+}
+
+.nav-item{
+  list-style-type: none;
+}
+
+.open{
+  transform: translateX(0px);
+}
+
+.navigation {
+  position: absolute;
+  left: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navigation a{
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  color:#fff;
+  display:block;
+  margin-bottom:25px;
+}
