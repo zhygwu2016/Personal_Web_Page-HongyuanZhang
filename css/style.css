@@ -52,7 +52,7 @@ body{
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #fff;
   padding-top: 1rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .aboutMe p{
@@ -63,6 +63,10 @@ body{
   padding-bottom:2rem;
 }
 
+.introduce-myself a{
+  color: #c8b18b;
+}
+
 .portrait{
   padding:1rem 2rem 1.5rem 1.5rem;
 }
@@ -70,6 +74,27 @@ body{
 .photography-ZHY{
   background-color:#004065;
   position:relative;
+}
+
+.slideshow-box{
+  height:80vh;
+  padding-top: 2vh;
+}
+
+.heading-photography{
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  font-size:80px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.slideshow-photography{
+  background-image: url(../assets/images/20130829-ending.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .publication-ZHY{
