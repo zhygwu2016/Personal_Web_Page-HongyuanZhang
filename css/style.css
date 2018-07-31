@@ -4,7 +4,8 @@ body{
 }
 
 .container{
-  max-width:960px;
+  /* max-width:960px; */
+  max-width:80vw;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
@@ -61,6 +62,7 @@ body{
   font-size: 1.2rem;
   padding-top:1rem;
   padding-bottom:2rem;
+  padding-right: 1rem;
 }
 
 .introduce-myself a{
@@ -79,6 +81,7 @@ body{
 .slideshow-box{
   height:80vh;
   padding-top: 2vh;
+  overflow: hidden;
 }
 
 .heading-photography{
@@ -90,12 +93,89 @@ body{
   padding-bottom: 10vh;
 }
 
-.slideshow-photography{
-  background-image: url(../assets/images/20130829-ending.jpg);
+/* ↓↓↓ For slideshow */
+
+.slideshow{
+  /* background-image: url(../assets/images/20130829-ending.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
+  position: relative;
+  overflow: hidden;
 }
+
+.holder{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1000vw;
+  height:75vh;
+  transition: left 1s;
+}
+
+.slide-pic{
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 10px;
+}
+
+.slide-1{
+  background-image: url(../assets/images/slideshow_00.jpg);
+}
+
+.slide-2{
+  background-image: url(../assets/images/slideshow_01.jpg);
+}
+
+.slide-3{
+  background-image: url(../assets/images/slideshow_02.jpg);
+}
+
+.slide-4{
+  background-image: url(../assets/images/slideshow_03.jpg);
+}
+
+.slide-5{
+  background-image: url(../assets/images/slideshow_04.jpg);
+}
+
+.slide-6{
+  background-image: url(../assets/images/slideshow_05.jpg);
+}
+
+.steps {
+  position: absolute;
+  /* bottom: 100px; */
+  /* "bottom:" use js to create responsive number  */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  color:#fff;
+  font-family: 'HK-Grotesk-Medium', sans-serif;
+}
+
+.prev{
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  color:#fff;
+  font-size: 4vw;
+  transform: translateY(-50%);
+}
+
+.next{
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  color:#fff;
+  font-size: 4vw;
+  transform: translateY(-50%);
+}
+
+/* ↑↑↑ For slideshow */
 
 .publication-ZHY{
   background-color:#c8b18b;

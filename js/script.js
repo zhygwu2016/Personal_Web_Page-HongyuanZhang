@@ -66,3 +66,80 @@ inView('.fade')
   .on('exit', el => {
     el.classList.remove('visible');
 });
+
+const slideshowFunction = function(){
+
+  const windowWidth = $(window).width(); // set .slide-pic width and height
+  const slideshowWidth = $('.slideshow').width();
+  const slideshowHeight = $('.slideshow').height();
+  const slideshowResHeight = slideshowWidth*2/3;
+  const stepsBottom = slideshowHeight - slideshowResHeight;
+  $('.slide-pic').css("width", slideshowWidth + "px");
+  $('.slide-pic').css("height", slideshowResHeight + "px");
+  $('.steps').css("bottom", stepsBottom + "px"); //make the position of 'steps' responsive!
+  $('.prev').css("top", 0.5 * slideshowResHeight + "px");
+  $('.next').css("top", 0.5 * slideshowResHeight + "px");
+
+  var currentSlide = 0;
+  var totalSlides = $('.holder div').length;
+  var slideNumber = currentSlide + 1;
+  $('.steps').text(slideNumber + ' / ' + totalSlides);
+
+  var moveSlide = function(slide){
+    var leftPosition = (- slide * slideshowWidth) + 'px';
+    $('.holder').css('left',leftPosition);
+    var slideNumber = slide + 1;
+    $('.steps').text(slideNumber + ' / ' + totalSlides);
+  };
+
+  var nextSlide = function(){
+    currentSlide = currentSlide + 1;
+    if(currentSlide >= totalSlides){
+      currentSlide = 0;
+    }
+    moveSlide(currentSlide);
+  };
+
+  var previousSlide = function(){
+    currentSlide = currentSlide - 1;
+    if(currentSlide<0){
+      currentSlide = totalSlides - 1;
+    }
+    moveSlide(currentSlide);
+  };
+
+  var autoSlide = setInterval(function(){
+    nextSlide();
+  },3000); //every 3s (3000 ms)
+
+  $('.next').on('click', function(){
+    // this is going to cancel our autoSlide interval function
+    // when user has taken over control of the slidesow
+    clearInterval(autoSlide);
+    nextSlide();
+  });
+
+  $('.prev').on('click', function(){
+    clearInterval(autoSlide);
+    previousSlide();
+  });
+
+  $('body').on('keydown', function(event){
+    var keyCode = event.keyCode;
+    if(keyCode == 37 ){ // 37 is keycode of left arrow
+      clearInterval(autoSlide);
+      previousSlide();
+    }
+    if(keyCode == 39 ){
+      clearInterval(autoSlide);
+      nextSlide();
+    }
+  });
+};
+
+
+$(function(){
+  $(window).resize(function(){
+    slideshowFunction();
+  }).resize();
+});
