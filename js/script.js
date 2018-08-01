@@ -16,19 +16,27 @@ $('.menu-link').on('click', function(){
 });
 
 // get the window width every time when we change window size!
-$(function(){
-  $(window).resize(function(){
-      const windowWidth = $(window).width();
-      const responsiveHeight = windowWidth*2/3-3;
-      //console.log(responsiveHeight);
-      $('.home').css("height",responsiveHeight + "px");
-  }).resize();
+$(window).resize(function(){
+    const windowWidth = $(window).width();
+    const responsiveHeight = windowWidth*2/3-3;
+    //console.log(responsiveHeight);
+    $('.home').css("height",responsiveHeight + "px");
 });
+
 
 // 1. whenever we click a .js-scroll link, we want to run a function
 // 2. we want to stop the link from jumping straight to our section (its default behaviour)
 // 3. we want to find out the href attribute, and then grab that element
 // 4. then scroll to it using scrollIntoView
+// ↓↓↓ jQuery way:
+$('.js-scroll').on('click',function(){
+  const href = $(this).attr('href');
+  //console.log(href);
+  document.querySelector(href).scrollIntoView({
+    behavior: 'smooth'
+  });
+  return false;
+});
 // const scrollLinks = document.querySelectorAll('.js-scroll');
 // scrollLinks.forEach(link => {
 //   link.addEventListener('click', (event)=>{
@@ -43,23 +51,10 @@ $(function(){
 //     });
 //   });
 // });
-// ↓↓↓ jQuery way:
-$('.js-scroll').on('click',function(){
-  const href = $(this).attr('href');
-  //console.log(href);
-  document.querySelector(href).scrollIntoView({
-    behavior: 'smooth'
-  });
-  return false;
-});
 
-// here we grab all our images we want to fade in
-// we add the visible class which toggles the opacity
-// inView('.fade')
-//   .on('enter', img => img.classList.add('visible'))
-//   .on('exit', img => img.classList.remove('visible'));
 
-inView('.fade')
+// inView function
+inView('.fade-inview')
   .on('enter', el => {
     el.classList.add('visible');
   })
@@ -67,16 +62,19 @@ inView('.fade')
     el.classList.remove('visible');
 });
 
-const slideshowFunction = function(){
 
-  const windowWidth = $(window).width(); // set .slide-pic width and height
-  const slideshowWidth = $('.slideshow').width();
-  const slideshowHeight = $('.slideshow').height();
-  const slideshowResHeight = slideshowWidth*2/3;
-  const stepsBottom = slideshowHeight - slideshowResHeight;
+// ↓↓↓ .slideshow responsive (resize) function
+$(function(){
+  let windowWidth = $(window).width(); // set .slide-pic width and height
+  let slideshowWidth = $('.slideshow').width();
+  let slideshowHeight = $('.slideshow').height();
+  let slideshowResHeight = slideshowWidth*2/3;
+  let stepsBottom = slideshowHeight - slideshowResHeight;
+
   $('.slide-pic').css("width", slideshowWidth + "px");
   $('.slide-pic').css("height", slideshowResHeight + "px");
   $('.steps').css("bottom", stepsBottom + "px"); //make the position of 'steps' responsive!
+  // $('.dot').css("bottom", stepsBottom + "px");
   $('.prev').css("top", 0.5 * slideshowResHeight + "px");
   $('.next').css("top", 0.5 * slideshowResHeight + "px");
 
@@ -135,11 +133,21 @@ const slideshowFunction = function(){
       nextSlide();
     }
   });
-};
 
 
-$(function(){
   $(window).resize(function(){
-    slideshowFunction();
-  }).resize();
+    windowWidth = $(window).width(); // set .slide-pic width and height
+    slideshowWidth = $('.slideshow').width();
+    slideshowHeight = $('.slideshow').height();
+    slideshowResHeight = slideshowWidth*2/3;
+    stepsBottom = slideshowHeight - slideshowResHeight;
+
+    $('.slide-pic').css("width", slideshowWidth + "px");
+    $('.slide-pic').css("height", slideshowResHeight + "px");
+    $('.steps').css("bottom", stepsBottom + "px"); //make the position of 'steps' responsive!
+    // $('.dot').css("bottom", stepsBottom + "px");
+    $('.prev').css("top", 0.5 * slideshowResHeight + "px");
+    $('.next').css("top", 0.5 * slideshowResHeight + "px");
+  });
+
 });
