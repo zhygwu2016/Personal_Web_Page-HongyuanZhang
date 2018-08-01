@@ -15,6 +15,11 @@ $('.menu-link').on('click', function(){
   return false;
 });
 
+
+const windowWidth = $(window).width();
+const responsiveHeight = windowWidth*2/3-3;
+//console.log(responsiveHeight);
+$('.home').css("height",responsiveHeight + "px");
 // get the window width every time when we change window size!
 $(window).resize(function(){
     const windowWidth = $(window).width();
