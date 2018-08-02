@@ -81,6 +81,7 @@ inView('.fade-inview')
 
 
 // ↓↓↓ .slideshow responsive (resize) function
+// $(function() {...} means $(document).ready(function(){...}) 页面载入后即执行
 $(function(){
   let windowWidth = $(window).width(); // set .slide-pic width and height
   let slideshowWidth = $('.slideshow').width();
@@ -100,32 +101,49 @@ $(function(){
   var slideNumber = currentSlide + 1;
   $('.steps').text(slideNumber + ' / ' + totalSlides);
 
+  // ↓↓↓ THE KEY FUNCTION: moveSlide
   var moveSlide = function(slide){
+    // "modulo" to create infinite loop
+    // e.g. when we slide to “7th” slide position, grap the 1th slide,
+    // move to the 7th position, so we can the 1st div after 6th div
+    var moduloSlideNum = slide % totalSlides;
+    var modSlide = $(".holder div").eq(moduloSlideNum);
+    modSlide.css("position", "absolute");
+    modSlide.css("left", slide * slideshowWidth + "px");
+
+    // move the holder, so that wa can see the slideshow animation
     var leftPosition = (- slide * slideshowWidth) + 'px';
     $('.holder').css('left',leftPosition);
-    var slideNumber = slide + 1;
+
+    var slideNumber = (slide % totalSlides) + 1 ;
+      // when we use previousSlide, 'slideNumber' might be negative
+      if (slideNumber<=0){
+        slideNumber = slideNumber + totalSlides;
+      }
     $('.steps').text(slideNumber + ' / ' + totalSlides);
   };
+  // ↑↑↑ THE KEY FUNCTION: moveSlide
+
 
   var nextSlide = function(){
     currentSlide = currentSlide + 1;
-    if(currentSlide >= totalSlides){
-      currentSlide = 0;
-    }
+    // if(currentSlide >= totalSlides){
+    //   currentSlide = 0;
+    // }
     moveSlide(currentSlide);
   };
 
   var previousSlide = function(){
     currentSlide = currentSlide - 1;
-    if(currentSlide<0){
-      currentSlide = totalSlides - 1;
-    }
+    // if(currentSlide<0){
+    //   currentSlide = totalSlides - 1;
+    // }
     moveSlide(currentSlide);
   };
 
   var autoSlide = setInterval(function(){
     nextSlide();
-  },3000); //every 3s (3000 ms)
+  },4000); //every 4s 
 
   $('.next').on('click', function(){
     // this is going to cancel our autoSlide interval function
@@ -150,6 +168,7 @@ $(function(){
       nextSlide();
     }
   });
+
 
 
   $(window).resize(function(){
