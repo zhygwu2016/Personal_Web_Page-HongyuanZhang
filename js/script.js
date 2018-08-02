@@ -1,3 +1,15 @@
+// Simple Auto-Playing Slideshow
+// https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
+$("#home-background > div:gt(0)").hide();
+setInterval(function() {
+  $('#home-background > div:first')
+    .fadeOut(2000)
+    .next()
+    .fadeIn(2000)
+    .end()
+    .appendTo('#home-background');
+}, 5000);
+
 // 1. When we click the button, run a function
 // 2. Inside the function, add/remove the class of open
 // 3. Make sure our link doesn't jump the page to the top
