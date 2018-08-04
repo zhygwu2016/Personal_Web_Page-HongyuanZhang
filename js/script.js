@@ -27,6 +27,15 @@ $('.menu-link').on('click', function(){
   return false;
 });
 
+$('.back-to-home,.back-to-top').on('click', function(){
+  const href = '#home';
+  console.log(href);
+  document.querySelector(href).scrollIntoView({
+    behavior: 'smooth'
+  });
+  return false;
+});
+
 
 const windowWidth = $(window).width();
 const responsiveHeight = windowWidth*2/3-3;
@@ -95,6 +104,7 @@ $(function(){
   // $('.dot').css("bottom", stepsBottom + "px");
   $('.prev').css("top", 0.5 * slideshowResHeight + "px");
   $('.next').css("top", 0.5 * slideshowResHeight + "px");
+  $('.click-for-more').css("top", slideshowResHeight+36 + "px");
 
   var currentSlide = 0;
   var totalSlides = $('.holder div').length;
@@ -143,7 +153,7 @@ $(function(){
 
   var autoSlide = setInterval(function(){
     nextSlide();
-  },4000); //every 4s 
+  },4000); //every 4s
 
   $('.next').on('click', function(){
     // this is going to cancel our autoSlide interval function
@@ -169,8 +179,6 @@ $(function(){
     }
   });
 
-
-
   $(window).resize(function(){
     windowWidth = $(window).width(); // set .slide-pic width and height
     slideshowWidth = $('.slideshow').width();
@@ -184,6 +192,7 @@ $(function(){
     // $('.dot').css("bottom", stepsBottom + "px");
     $('.prev').css("top", 0.5 * slideshowResHeight + "px");
     $('.next').css("top", 0.5 * slideshowResHeight + "px");
+    $('.click-for-more').css("top", slideshowResHeight+36 + "px");
   });
 
 });
