@@ -65,6 +65,10 @@ body{
   padding-right: 1rem;
 }
 
+/* .aboutMe-row-reverse{
+  flex-direction: row-reverse;
+} */
+
 .introduce-myself a{
   color: #c8b18b;
 }
@@ -198,18 +202,125 @@ body{
   position:relative;
 }
 
+.book-image{
+  padding:1rem 1rem 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-image img{
+  /* height: 100%; */
+  max-height:50vh;
+}
+
+.book-details{
+  padding:1rem 0 1rem 1rem;
+}
+
+.book-introduction{
+  font-family: 'HK-Grotesk-Regular', sans-serif;
+}
+
+.book-introduction h2{
+  line-height: 2;
+  font-size: 2.5vw;
+}
+.book-introduction h3{
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  font-size: 1rem;
+}
+
+.italic{
+  font-style: italic;
+  font-family: 'HK-Grotesk-Medium', sans-serif;
+}
+
+.buy-it h2{
+  text-align: center;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.book-links a{
+  text-decoration: none;
+  color:#004065;
+  font-family: 'HK-Grotesk-Medium', sans-serif;
+  transition: border 0.3s ease-in;
+  border-bottom: solid 2px rgba(0,0,0,0);
+  padding-bottom: 1px;
+}
+
+.book-links a:hover{
+  border-bottom: solid 2px #004065;
+}
+
 .contact-ZHY{
   background-color:#008367;
   position:relative;
   height:90vh;
 }
 
+.joints{
+  text-align: center;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color:#fff;
+}
+
+.links-1, .links-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.links-1 a, .links-2 a{
+  text-decoration: none;
+  width:25%;
+}
+.test{
+  width:25%;
+}
+
+.links-1 p, .links-2 p{
+  display: inline-block;
+  color:#fff;
+  font-family: 'HK-Grotesk-Medium', sans-serif;
+  font-size: 1.2rem;
+  transition: border 0.3s ease-in;
+  border-bottom: solid 2px rgba(0,0,0,0);
+}
+
+.links-1 p:hover, .links-2 p:hover{
+  border-bottom: solid 2px #fff;
+}
+
+
 .back-to-top{
   position: absolute;
   left:50%;
   transform:translateX(-50%);
-  bottom:1.5rem;
+  bottom:2rem;
   height:32px;
+  text-decoration: none;
+  color:#fff;
+  transition: transform 0.5s ease;
+}
+
+.back-to-top p{
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  font-size: 1.2rem;
+  border: solid 3px #fff;
+  padding:5px 10px;
+}
+
+.back-to-top:hover{
+  transform: scale(1.1) translateX(-45%);
+  opacity:0.9;
 }
 
 
