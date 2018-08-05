@@ -278,9 +278,15 @@ body{
   justify-content: space-around;
 }
 
+.links-1 img, .links-2 img{
+  width:25px;
+  margin-bottom: 5px;
+}
+
 .links-1 a, .links-2 a{
   text-decoration: none;
   width:25%;
+  padding-bottom: 50px;
 }
 .test{
   width:25%;
