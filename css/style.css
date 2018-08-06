@@ -280,7 +280,9 @@ body{
 
 .links-1 img, .links-2 img{
   width:25px;
+  margin-right: 5px;
   margin-bottom: 5px;
+  transition:transform 1s ease;
 }
 
 .links-1 a, .links-2 a{
@@ -299,12 +301,13 @@ body{
   font-size: 1.2rem;
   transition: border 0.3s ease-in;
   border-bottom: solid 2px rgba(0,0,0,0);
+  transition:transform 0.8s ease;
 }
 
 .links-1 p:hover, .links-2 p:hover{
   border-bottom: solid 2px #fff;
+  transform: scale(1.05);
 }
-
 
 .back-to-top{
   position: absolute;

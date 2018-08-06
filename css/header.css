@@ -10,8 +10,9 @@
 
 .home-bg{
   /* background-image: url(../assets/images/header_bg00.jpg); */
-  background-size: 100% auto;
-  background-position: center top;
+  /* background-size: 100% auto; */
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   position: absolute;
   top:0;
@@ -20,7 +21,7 @@
   z-index: -1;
 }
 
-.home-bg-00{
+/* .home-bg-00{
   background-image: url(../assets/images/header_bg00.jpg);
 }
 .home-bg-01{
@@ -34,7 +35,7 @@
 }
 .home-bg-04{
   background-image: url(../assets/images/header_bg04.jpg);
-}
+} */
 
 header{
   position: relative;

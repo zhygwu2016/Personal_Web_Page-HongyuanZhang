@@ -36,17 +36,46 @@ $('.back-to-home,.back-to-top').on('click', function(){
   return false;
 });
 
+// .home background images, responsive function:
+// when screen is horizontal size, use these background images
+var landscapeMode = function(){
+  $('.home-bg-00').css("background-image","url(../assets/images/header_bg00.jpg)");
+  $('.home-bg-01').css("background-image","url(../assets/images/header_bg01.jpg)");
+  $('.home-bg-02').css("background-image","url(../assets/images/header_bg02.jpg)");
+  $('.home-bg-03').css("background-image","url(../assets/images/header_bg03.jpg)");
+  $('.home-bg-04').css("background-image","url(../assets/images/header_bg04.jpg)");
+};
+// when screen is vertical size, use these background images
+var portraitMode = function(){
+  $('.home-bg-00').css("background-image","url(../assets/images/header_vh_bg00.jpg)");
+  $('.home-bg-01').css("background-image","url(../assets/images/header_vh_bg01.jpg)");
+  $('.home-bg-02').css("background-image","url(../assets/images/header_vh_bg02.jpg)");
+  $('.home-bg-03').css("background-image","url(../assets/images/header_vh_bg03.jpg)");
+  $('.home-bg-04').css("background-image","url(../assets/images/header_vh_bg04.jpg)");
+};
 
 const windowWidth = $(window).width();
-const responsiveHeight = windowWidth*2/3-3;
-//console.log(responsiveHeight);
-$('.home').css("height",responsiveHeight + "px");
+const windowHeight = $(window).height();
+if (windowWidth>=windowHeight){
+  const responsiveHeight = windowWidth*2/3-3;
+  $('.home').css("height",responsiveHeight + "px");
+  landscapeMode();
+} else {
+  $('.home').css("height","100vh");
+  portraitMode();
+}
 // get the window width every time when we change window size!
 $(window).resize(function(){
-    const windowWidth = $(window).width();
+  const windowWidth = $(window).width();
+  const windowHeight = $(window).height();
+  if (windowWidth>=windowHeight){
     const responsiveHeight = windowWidth*2/3-3;
-    //console.log(responsiveHeight);
     $('.home').css("height",responsiveHeight + "px");
+    landscapeMode();
+  } else {
+    $('.home').css("height","100vh");
+    portraitMode();
+  }
 });
 
 
