@@ -3,6 +3,26 @@ body{
   line-height: 1.5;
 }
 
+/* when click menu-toggle, cover a black overlay */
+.black-overlay{
+  display: none;
+}
+
+.black-overlay-background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 5;
+}
+.overlay-overflow{
+  overflow: hidden;
+}
+
 .container{
   /* max-width:960px; */
   max-width:80vw;
@@ -44,6 +64,7 @@ body{
 .aboutMe{
   background-color: #222;
   position: relative;
+  height:100vh;
 }
 
 .heading{
@@ -80,6 +101,7 @@ body{
 .photography-ZHY{
   background-color:#004065;
   position:relative;
+  height:100vh;
 }
 
 .slideshow-box{
@@ -200,6 +222,7 @@ body{
 .publication-ZHY{
   background-color:#c8b18b;
   position:relative;
+  height:100vh;
 }
 
 .book-image{
@@ -260,7 +283,7 @@ body{
 .contact-ZHY{
   background-color:#008367;
   position:relative;
-  height:90vh;
+  height:100vh;
 }
 
 .joints{
@@ -345,7 +368,7 @@ footer img{
 
 footer p{
   color:#fff;
-  padding-top: 1.5rem;
-  padding-right: 1rem;
+  padding-top: 3.5vh;
+  padding-right: 5vh;
   text-align: center;
 }

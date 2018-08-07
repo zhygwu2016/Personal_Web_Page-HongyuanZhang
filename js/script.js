@@ -15,11 +15,15 @@ setInterval(function() {
 // 3. Make sure our link doesn't jump the page to the top
 $('.menu-toggle img').on('click', function(){
   $('.menu').toggleClass('open');
+  $('.black-overlay').fadeToggle(200); // cover a black overlay
+  $('body').toggleClass('overlay-overflow'); //forbid the page scrolling
   return false;
 });
 
 $('.menu-link').on('click', function(){
   $('.menu').toggleClass('open');
+  $('.black-overlay').fadeToggle(200);
+  $('body').toggleClass('overlay-overflow');
   const href = $(this).attr('href');
   document.querySelector(href).scrollIntoView({
     behavior: 'smooth'

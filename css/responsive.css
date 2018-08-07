@@ -1,0 +1,160 @@
+/* Portrait */
+@media only screen and (orientation: portrait) {
+
+  header{
+    height:9vh;
+  }
+
+  .home-title{
+    margin-top: 20vh;
+    font-size: 9vw;
+  }
+  .home-title h1{
+    padding:2rem 0;
+  }
+
+  .menu-toggle img{
+    height:8vw;
+    margin:20px;
+  }
+
+  .matuanzhang-logo img{
+    max-width:30vw;
+    margin-top: 0.5vh;
+  }
+
+  .scroll-to{
+    width:10vw;
+    height:8vh;
+  }
+
+  .menu{
+    width:65vw;
+  }
+
+  .navigation {
+    left:10vw;
+  }
+
+  .navigation a{
+    font-size: 6vw;
+    margin-bottom:6vw;
+  }
+
+  .heading{
+    font-size:15vw;
+    margin-top: 5vw;
+  }
+
+  .aboutMe-details{
+    flex-direction: column-reverse;
+  }
+
+  .introduce-myself{
+    width:100%;
+    margin-top: 2vh;
+  }
+
+  .portrait{
+    width:100%;
+    text-align: center;
+    margin-bottom: 5vw;
+    padding:0;
+  }
+  .portrait img{
+    width:30vw;
+  }
+
+  .introduce-myself p{
+    font-size: 1.5vh;
+  }
+
+  .heading-photography{
+    writing-mode:horizontal-tb;
+    text-orientation: none;
+    transform: rotate(0deg);
+    padding:0;
+    font-size:12vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    width:100%;
+  }
+
+  .slideshow{
+    width:100%;
+    margin-top: 10vh;
+  }
+
+  .click-for-more{
+    font-size: 5vw;
+  }
+
+  .book-image{
+    width:100%;
+    text-align: center;
+  }
+  .book-image img{
+    width:25vw;
+  }
+
+  .book-details{
+    width:100%;
+    text-align: center;
+  }
+
+  .book-introduction h2{
+    line-height: 1.5;
+    font-size: 3vw;
+  }
+  .book-introduction h3{
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+    font-size: 2.5vw;
+  }
+
+  .summary{
+    font-size: 2vw;
+  }
+
+  .book-links a{
+    font-size: 3vw;
+  }
+
+  .joints{
+    font-size: 3vw;
+  }
+
+  .links-1 a{
+    width:50%;
+  }
+  .links-1 img{
+    width:4vw;
+  }
+  .links-1 p{
+    font-size: 3vw;
+  }
+
+  .email-tel{
+    width:100%;
+    margin: 2vw 0;
+  }
+  .email-tel p{
+    font-size: 3vw;
+  }
+  .email-tel img{
+    width:4vw;
+  }
+
+  .back-to-top{
+    bottom: 5vw;
+  }
+
+  footer img{
+    padding:3vw;
+  }
+  footer p{
+    padding-top: 5vw;
+    padding-right: 4vw;
+    font-size: 2.5vw;
+  }
+
+}

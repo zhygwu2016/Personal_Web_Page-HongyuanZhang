@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
 
   <body>
     <section class="home" id="home">
-      <header class="header-desktop container flex flex-column"></header>
       <header class="header">
         <a href="#" class="menu-toggle header-button">
           <img src="assets/images/menu-icon.svg">
@@ -43,6 +43,11 @@
       </a>
     </section>
 
+    <!-- black overlay shows when we click the menu-toggle -->
+    <div class="black-overlay">
+      <div class="black-overlay-background"></div>
+    </div>
+
     <section class="menu">
       <nav class="navigation">
         <li class="nav-item">
@@ -66,13 +71,13 @@
       </nav>
     </section>
 
-    <section class="aboutMe min-vh-100 pt5-ns" id="about">
+    <section class="aboutMe pt5-ns" id="about">
       <div class="container flex flex-wrap justify-between">
         <div class="heading col-12">
           <h1 class="fade-inview">About Me</h1>
         </div>
 
-        <div class="aboutMe-row-reverse flex flex-wrap justify-between">
+        <div class="aboutMe-details flex flex-wrap justify-between">
           <div class="introduce-myself col-7">
             <p class="fade-inview">
               I'm currently living in Washington D.C. and focusing on front-end
@@ -96,7 +101,7 @@
       <a href="#photography" class="js-scroll scroll-to fade-inview"></a>
     </section>
 
-    <section class="photography-ZHY min-vh-100 pt5-ns" id="photography">
+    <section class="photography-ZHY pt5-ns" id="photography">
       <div class="container flex flex-wrap justify-between fade-inview">
         <div class="slideshow-box flex flex-wrap col-12">
           <div class="heading heading-photography col-2">
@@ -124,7 +129,7 @@
       <a href="#publication" class="js-scroll scroll-to fade-inview"></a>
     </section>
 
-    <section class="publication-ZHY min-vh-100 pt5-ns fade-inview" id="publication">
+    <section class="publication-ZHY pt5-ns fade-inview" id="publication">
       <div class="container flex flex-wrap justify-between">
         <div class="heading col-12">
           <h1>Publication</h1>
@@ -140,7 +145,7 @@
             <p class="italic">ISBN: 978730128573</p>
             <p class="italic">Peking University Press, Sept 2017</p>
             <br>
-            <p>Introduce basic photography knowledge, image processing skills,
+            <p class="summary">Introduce basic photography knowledge, image processing skills,
                experience of composition and creative ideas for smartphones, like iPhone.</p><br>
           </div>
           <div class="buy-it">
@@ -159,7 +164,7 @@
       <a href="#contact" class="js-scroll scroll-to"></a>
     </section>
 
-    <section class="contact-ZHY min-vh-100 pt5-ns fade-inview" id="contact">
+    <section class="contact-ZHY pt5-ns fade-inview" id="contact">
       <div class="container flex flex-wrap justify-between">
         <div class="heading col-12">
           <h1>Contact</h1>
@@ -202,13 +207,13 @@
           </div>
           <p class="joints">And...</p>
           <div class="links-2 flex flex-wrap justify-center tc">
-            <div class="w-50-ns">
+            <div class="email-tel w-50">
               <a href="mailto:zhygwu2016@gmail.com">
                 <img src="./assets/images/icons/icon-email.png">
                 <p>zhygwu2016@gmail.com</p>
               </a>
             </div>
-            <div class="w-50-ns">
+            <div class="email-tel w-50">
               <a href="tel:1-571-214-7685">
                 <img src="./assets/images/icons/icon-tel.png">
                 <p>Tel: 1-571-214-7685</p>
