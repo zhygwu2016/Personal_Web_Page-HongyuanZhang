@@ -28,17 +28,17 @@ body{
   max-width:80vw;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
 }
 
 .scroll-to{
   position: absolute;
   left:50%;
   transform:translateX(-50%);
-  bottom:1.5rem;
-  width:4rem;
-  height:32px;
+  bottom: 3vh;
+  width:5vw;
+  height:5vh;
   background-image:url(../assets/images/down-arrow.svg);
   filter: invert(100%);
   background-size: contain;
@@ -64,17 +64,16 @@ body{
 .aboutMe{
   background-color: #222;
   position: relative;
-  height:100vh;
 }
 
 .heading{
-  font-size: 100px;
+  font-size: 8vw;
   font-family: 'HK-Grotesk-Bold', sans-serif;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 0.25vw;
   -webkit-text-stroke-color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .aboutMe p{
@@ -83,7 +82,7 @@ body{
   font-size: 1.2rem;
   padding-top:1rem;
   padding-bottom:2rem;
-  padding-right: 1rem;
+  padding-right: 2vw;
 }
 
 /* .aboutMe-row-reverse{
@@ -101,7 +100,6 @@ body{
 .photography-ZHY{
   background-color:#004065;
   position:relative;
-  height:100vh;
 }
 
 .slideshow-box{
@@ -222,7 +220,6 @@ body{
 .publication-ZHY{
   background-color:#c8b18b;
   position:relative;
-  height:100vh;
 }
 
 .book-image{
@@ -283,7 +280,6 @@ body{
 .contact-ZHY{
   background-color:#008367;
   position:relative;
-  height:100vh;
 }
 
 .joints{
@@ -357,18 +353,18 @@ body{
 
 
 footer{
-  height: 10vh;
+  height: 6vw;
   background-color: #000;
 }
 
 footer img{
-  max-height:10vh;
+  max-height:6vw;
   padding:1rem;
 }
 
 footer p{
   color:#fff;
-  padding-top: 3.5vh;
-  padding-right: 5vh;
+  padding-top: 2vw;
+  padding-right: 3vw;
   text-align: center;
 }

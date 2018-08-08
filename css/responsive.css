@@ -10,17 +10,21 @@
     font-size: 9vw;
   }
   .home-title h1{
-    padding:2rem 0;
+    padding:3vh 0;
   }
 
   .menu-toggle img{
-    height:8vw;
-    margin:20px;
+    height:6vw;
+    margin:1.5vw;
   }
 
   .matuanzhang-logo img{
     max-width:30vw;
     margin-top: 0.5vh;
+  }
+
+  .navigation{
+    margin-top: 6vw;
   }
 
   .scroll-to{
@@ -148,7 +152,12 @@
     bottom: 5vw;
   }
 
+  footer{
+    height:15vw;
+  }
+
   footer img{
+    max-height:15vw;
     padding:3vw;
   }
   footer p{

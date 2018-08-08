@@ -1,8 +1,4 @@
 .home{
-  /* background-image: url(../assets/images/header_bg00.jpg);
-  background-size: 100% auto;
-  background-position: center top;
-  background-repeat: no-repeat; */
   max-height: 100vh;
   position: relative;
   text-align: center;
@@ -42,9 +38,14 @@ header{
   text-align: center;
 }
 
-header img{
-  max-width: 200px;
-  padding:1rem;
+.menu-toggle img{
+  max-width: 15vw;
+  padding:0.8vw 1vw;
+}
+
+.matuanzhang-logo img{
+  max-width: 15vw;
+  padding:1vw;
 }
 
 .home-title{
@@ -57,14 +58,14 @@ header img{
 }
 
 .home-title h1{
-  padding:10px;
+  padding:1vw;
 }
 
 
 .menu-toggle{
   position:fixed;
-  top:1.4rem;
-  left:1rem;
+  top:1.8vw;
+  left:1.5vw;
   /* position:absolute; */
   z-index:7;
   /* invert the color of image */
@@ -74,8 +75,8 @@ header img{
 .menu{
   background-color: #0096d6;
   /* background-color: #004065; */
-  width:30vw;
-  min-width: 330px;
+  width:32vw;
+  min-width: 20rem;
   position:fixed;
   top:0;
   left:0;
@@ -95,16 +96,16 @@ header img{
 
 .navigation {
   position: absolute;
-  left: 65px;
+  left: 6vw;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .navigation a{
-  font-size: 36px;
+  font-size: 3vw;
   font-weight: 700;
   text-decoration: none;
   color:#fff;
   display:block;
-  margin-bottom:25px;
+  margin-bottom:3.2vh;
 }
