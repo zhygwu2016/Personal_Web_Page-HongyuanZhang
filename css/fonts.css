@@ -1,7 +1,9 @@
-/* @font-face allows us to embed custom fonts on our page
-   here we're borrowing the code snippet form css tricks
-   which provides modern (by still very wide) browser support */
-/* https://css-tricks.com/snippets/css/using-font-face/ */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
 
 @font-face {
   font-family: 'HK-Grotesk-Bold';

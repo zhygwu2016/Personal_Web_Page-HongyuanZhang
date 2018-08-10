@@ -167,3 +167,50 @@
   }
 
 }
+
+/* landscape 768px - 1024px */
+@media only screen
+  and (min-width:48em)
+  and (max-width:64em)
+  and (orientation: landscape) {
+
+  .heading{
+    font-size: 7vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .home-title{
+    margin-top: 0vw;
+  }
+
+  .introduce-myself p{
+    font-size: 2.5vh;
+  }
+
+  .heading-photography{
+    font-size: 10vh;
+  }
+
+  .italic{
+    font-size: 1.2vw;
+  }
+
+  .summary{
+    font-size: 0.9rem;
+  }
+
+  .joints{
+    font-size: 2.5vw;
+  }
+}
+
+/* landscape < 768px */
+@media only screen
+  and (max-width:48em)
+  and (orientation: landscape) {
+    .home-title{
+      padding:10vh 0;
+    }
+}

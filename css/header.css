@@ -109,3 +109,7 @@ header{
   display:block;
   margin-bottom:3.2vh;
 }
+
+.menu-link{
+  font-family: 'Ubuntu', sans-serif;
+}
