@@ -257,6 +257,7 @@ body{
   font-family: 'Maven Pro', sans-serif;
   font-weight: 700;
   font-size: 1rem;
+  margin-bottom: 3vh;
 }
 
 .italic{
@@ -266,6 +267,7 @@ body{
 
 .summary{
   font-family: 'Comfortaa', cursive;
+  margin-top: 3vh;
 }
 
 .buy-it h2{

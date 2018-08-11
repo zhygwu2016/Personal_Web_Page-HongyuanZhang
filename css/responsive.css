@@ -1,5 +1,6 @@
 /* Portrait */
-@media only screen and (orientation: portrait) {
+@media only screen
+  and (orientation: portrait) {
 
   header{
     height:9vh;
@@ -34,6 +35,7 @@
 
   .menu{
     width:65vw;
+    min-width: 0;
   }
 
   .navigation {
@@ -47,7 +49,10 @@
 
   .heading{
     font-size:15vw;
-    margin-top: 5vw;
+    margin-top: 4vh;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
   }
 
   .aboutMe-details{
@@ -111,7 +116,6 @@
     font-size: 3vw;
   }
   .book-introduction h3{
-    font-family: 'HK-Grotesk-Bold', sans-serif;
     font-size: 2.5vw;
   }
 
@@ -168,6 +172,7 @@
 
 }
 
+
 /* landscape 768px - 1024px */
 @media only screen
   and (min-width:48em)
@@ -193,16 +198,43 @@
     font-size: 10vh;
   }
 
+  .book-introduction h3{
+    margin-bottom: 2vh;
+  }
+
   .italic{
     font-size: 1.2vw;
   }
 
   .summary{
     font-size: 0.9rem;
+    margin-top: 2vh;
+  }
+
+  .buy-it h2{
+    font-size: 1.2rem;
+  }
+
+  .book-links{
+    font-size: 2.5vh;
   }
 
   .joints{
     font-size: 2.5vw;
+    padding: 1rem 0;
+  }
+
+  .back-to-top p{
+    font-size: 0.8rem;
+    bottom:1rem;
+  }
+
+  footer img{
+    padding:0.8rem;
+  }
+
+  footer p{
+    padding-top: 1.5vw;
   }
 }
 
@@ -210,7 +242,185 @@
 @media only screen
   and (max-width:48em)
   and (orientation: landscape) {
-    .home-title{
-      padding:10vh 0;
-    }
+
+  .home-title{
+    padding:12vh 0;
+  }
+
+  .menu-toggle img {
+    max-width: 5vw;
+    padding: 1vw 1vw;
+  }
+
+  .menu{
+    width:30vw;
+    min-width: 7rem;
+  }
+
+  .heading{
+    padding-bottom: 0;
+  }
+  .aboutMe, .publication-ZHY, .contact-ZHY{
+    padding-top: 4vw;
+  }
+
+  .introduce-myself p{
+    font-size: 1vh;
+  }
+
+  .photography-ZHY{
+    padding-top: 7vw;
+  }
+
+  .click-for-more{
+    font-size: 3vw;
+  }
+  .book-introduction h3{
+    font-size: 2vw;
+  }
+  .italic{
+    font-size: 1vw;
+  }
+
+  .summary{
+    font-size: 1vw;
+  }
+
+  .buy-it h2{
+    font-size: 3vw;
+  }
+  .book-links a{
+    font-size: 1vw;
+  }
+
+  .joints{
+    font-size: 3vw;
+    padding:1rem 0;
+  }
+
+  .links-1 p, .links-2 p{
+    font-size: 1rem;
+  }
+
+  .links-1 img, .links-2 img{
+    width:1.2rem;
+  }
+
+  .links-1 a, .links-2 a{
+    padding-bottom: 2rem;
+  }
+
+  .back-to-top p{
+    font-size: 2vw;
+  }
+
+  footer img{
+    padding:10px;
+  }
+  footer p{
+    font-size: 10px;
+    padding-top: 2vh;
+  }
+}
+
+@media only screen
+  and (max-width:30em)
+  and (orientation: landscape) {
+
+  .aboutMe-details{
+    flex-direction: column-reverse;
+  }
+
+  .introduce-myself{
+    width:100%;
+    margin-top: 0;
+  }
+
+  .portrait{
+    width:100%;
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    padding:0;
+  }
+  .portrait img{
+    width:30vw;
+  }
+
+  .book-image{
+    width:100%;
+    text-align: center;
+    padding: 2vh 0;
+  }
+
+  .book-image img{
+    width:25vw;
+  }
+
+  .book-details{
+    width:100%;
+    text-align: center;
+  }
+
+  .book-introduction h2{
+    line-height: 1.5;
+    font-size: 3vw;
+  }
+  .book-introduction h3{
+    font-size: 2.5vw;
+  }
+
+  .book-links a{
+    font-size: 3vw;
+  }
+
+  .joints{
+    font-size: 3vw;
+  }
+
+  .links-1 a{
+    width:50%;
+  }
+  .links-1 img{
+    width:4vw;
+  }
+  .links-1 p{
+    font-size: 3vw;
+  }
+
+  .email-tel{
+    width:100%;
+    margin: 2vw 0;
+  }
+  .email-tel p{
+    font-size: 3vw;
+  }
+  .email-tel img{
+    width:4vw;
+  }
+
+  .links-1 a, .links-2 a{
+    padding-bottom: 1rem;
+  }
+
+  .jonts{
+    padding:10px 0;
+  }
+
+  .back-to-top{
+    bottom: 10px;
+  }
+
+  .back-to-top p{
+    font-size: 1px;
+  }
+
+  footer img{
+    padding:6px;
+  }
+  footer p{
+    font-size: 1px;
+  }
+
+
 }
