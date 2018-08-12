@@ -1,0 +1,13 @@
+body{
+  font-size: 16px;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.container-r{
+  /* max-width:960px; */
+  max-width:85vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
