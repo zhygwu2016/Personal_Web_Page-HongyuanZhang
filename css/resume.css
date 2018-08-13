@@ -1,3 +1,7 @@
+:root{
+  --red:#CE1C00;
+}
+
 body{
   font-size: 16px;
   font-family: 'Hammersmith One', sans-serif;
@@ -10,4 +14,57 @@ body{
   margin-right: auto;
   padding-left: 2vw;
   padding-right: 2vw;
+}
+
+header{
+  height:10vh;
+}
+
+.links{
+  padding-top: 3vh;
+}
+
+header a{
+  font-size: 2vw;
+  margin:0 2vw;
+}
+
+.resume-title{
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.resume-title h1{
+  font-size: 7vw;
+  padding-bottom: 8px;
+  /* text-align: right; */
+}
+
+.name h1{
+  display: inline-block;
+}
+
+.last-name{
+  margin-left: 2vw;
+  color:var(--red);
+}
+
+.resume-title p{
+  /* clear:both; */
+  color:#fff;
+  padding:1vw 1vw;
+  text-align: right;
+  font-size: 1.5vw;
+}
+
+.title-details{
+  background-color: #000;
+  width:100%;
+}
+
+h2{
+  font-size: 4vw;
+  border-bottom: 5px solid var(--red);
+  margin-top: 2vw;
+  margin-bottom: 1vw;
 }
