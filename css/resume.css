@@ -22,16 +22,25 @@ body{
 }
 
 header{
-  height:10vh;
+  height:10vw;
 }
 
 .links{
-  padding-top: 3vh;
+  padding-top: 4vw;
 }
 
 header a{
   font-size: 2vw;
   margin:0 2vw;
+  color:#004065;
+  text-decoration: none;
+  transition: border 0.5s ease;
+  border-bottom: solid 2px rgba(0,0,0,0);
+}
+
+header a:hover{
+  border-bottom: 2px solid;
+  color:var(--red);
 }
 
 .resume-title{
@@ -83,4 +92,27 @@ h2{
 
 .lists{
   text-indent: 2vw;
+}
+
+.book-title{
+  font-style: italic;
+}
+
+footer{
+  height:10vw;
+}
+
+
+@media only screen
+  and (orientation: portrait) {
+
+  header{
+    height:8vh;
+  }
+  .links {
+    padding-top: 4vh;
+  }
+  header a{
+    font-size: 3vw;
+  }
 }

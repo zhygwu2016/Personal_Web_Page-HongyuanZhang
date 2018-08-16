@@ -137,7 +137,8 @@ $(function(){
   // $('.dot').css("bottom", stepsBottom + "px");
   $('.prev').css("top", 0.5 * slideshowResHeight + "px");
   $('.next').css("top", 0.5 * slideshowResHeight + "px");
-  $('.click-for-more').css("top", slideshowResHeight+36 + "px");
+  $('.click-for-more').css("top", slideshowResHeight+45 + "px");
+
 
   var currentSlide = 0;
   var totalSlides = $('.holder div').length;
@@ -225,7 +226,7 @@ $(function(){
     // $('.dot').css("bottom", stepsBottom + "px");
     $('.prev').css("top", 0.5 * slideshowResHeight + "px");
     $('.next').css("top", 0.5 * slideshowResHeight + "px");
-    $('.click-for-more').css("top", slideshowResHeight+36 + "px");
+    $('.click-for-more').css("top", slideshowResHeight+45 + "px");
   });
 
 });
