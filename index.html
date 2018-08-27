@@ -37,7 +37,7 @@
         <h1>A Photographer.</h1>
         <h1>A Coder.</h1>
       </div>
-      <!-- <img src="assets/images/header_bg00.jpg" class="headerHelp" style="visibility: hidden;" /> -->
+
       <a href="#about" class="js-scroll scroll-to">
         <!-- <svg width="62" height="34" xmlns="http://www.w3.org/2000/svg"><path d="M31 33.156l2.594-2.219 28-24L56.406.844 31 22.624 5.594.845.406 6.937l28 24z" fill-rule="nonzero" fill="#fff"/></svg> -->
       </a>
@@ -80,7 +80,7 @@
         <div class="aboutMe-details flex flex-wrap justify-between">
           <div class="introduce-myself col-7">
             <p class="fade-inview">
-              I'm currently living in Seattle, and focusing on front-end
+              I'm currently living in Seattle, WA, and focusing on front-end
               web development. As an international student from China, I have
               obtained my Master's degree at The George Washington University in May 2018.
               <br><br>
@@ -92,7 +92,8 @@
               at my <a href="resume.html">resume</a> if you're interested.
             </p>
           </div>
-          <div class="portrait col-5">
+          <div class="portrait col-5" data-tilt data-tilt-max="40" data-tilt-speed="400" data-tilt-perspective="600">
+            <!-- Using tilt.js -->
             <img src="./assets/images/portrait-ZHY.jpg" class="fade-inview">
           </div>
         </div>
@@ -121,7 +122,7 @@
             <a class="prev">&#10094;</a>
             <a class="next">&#10095;</a>
             <a href="https://zhanghongyuan.tuchong.com" class="click-for-more col-12">
-              <p> → Click To See More... ←</p>
+              <p> →&nbsp;Click To See More...&nbsp;←</p>
             </a>
           </div>
         </div>
@@ -238,7 +239,6 @@
     </footer>
 
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-    <script src="js/anime.min.js"></script>
     <script src="js/in-view.js"></script>
     <script src="js/vanilla-tilt.js"></script>
     <script src="js/script.js"></script>
