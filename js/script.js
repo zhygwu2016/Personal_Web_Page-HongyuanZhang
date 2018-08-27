@@ -28,15 +28,6 @@ $('.menu-link').on('click', function(){
   return false;
 });
 
-$('.back-to-home,.back-to-top').on('click', function(){
-  const href = '#home';
-  console.log(href);
-  document.querySelector(href).scrollIntoView({
-    behavior: 'smooth'
-  });
-  return false;
-});
-
 // .home background images, responsive function:
 // when screen is horizontal size, use these background images
 var landscapeMode = function(){
@@ -85,11 +76,42 @@ $(window).resize(function(){
 // 3. find out the href attribute, and then grab that element
 // 4. then scroll to it using scrollIntoView
 // ↓↓↓ jQuery way:
+
+var smoothScrollAllBrowsers = function(position){
+  var isChromium = window.chrome;
+  var winNav = window.navigator;
+  var vendorName = winNav.vendor;
+  var isOpera = typeof window.opr !== "undefined";
+  var isIEedge = winNav.userAgent.indexOf("Edge") > -1;
+  var isIOSChrome = winNav.userAgent.match("CriOS");
+
+  if (isIOSChrome) {
+    // is Google Chrome on IOS
+    document.querySelector(position).scrollIntoView({
+      behavior: 'smooth'
+    });
+  } else if(
+    isChromium !== null &&
+    typeof isChromium !== "undefined" &&
+    vendorName === "Google Inc." &&
+    isOpera === false &&
+    isIEedge === false
+  ) {
+    // is Google Chrome
+    document.querySelector(position).scrollIntoView({
+      behavior: 'smooth'
+    });
+  } else {
+    // not Google Chrome
+    $("html, body").animate({
+      scrollTop: $(position).offset().top
+    }, 1000);
+  }
+};
+
 $('.js-scroll').on('click',function(){
   const href = $(this).attr('href');
-  document.querySelector(href).scrollIntoView({
-    behavior: 'smooth'
-  });
+  smoothScrollAllBrowsers(href);
   return false;
 });
 // JavaScript:
@@ -107,6 +129,13 @@ $('.js-scroll').on('click',function(){
 //     });
 //   });
 // });
+
+$('.back-to-home,.back-to-top').on('click', function(){
+  const href = '#home';
+  //console.log(href);
+  smoothScrollAllBrowsers(href);
+  return false;
+});
 
 
 // inView function
