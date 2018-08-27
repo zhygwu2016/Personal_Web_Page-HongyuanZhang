@@ -1,5 +1,3 @@
-// Simple Auto-Playing Slideshow
-// https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
 $("#home-background > div:gt(0)").hide();
 setInterval(function() {
   $('#home-background > div:first')
@@ -9,15 +7,14 @@ setInterval(function() {
     .end()
     .appendTo('#home-background');
 }, 5000);
+// inspired by Simple Auto-Playing Slideshow https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
 
-// 1. When we click the button, run a function
-// 2. Inside the function, add/remove the class of open
-// 3. Make sure our link doesn't jump the page to the top
+// Menu toggle
 $('.menu-toggle img').on('click', function(){
   $('.menu').toggleClass('open');
   $('.black-overlay').fadeToggle(200); // cover a black overlay
   $('body').toggleClass('overlay-overflow'); //forbid the page scrolling
-  return false;
+  return false; //Make sure our link doesn't jump the page to the top
 });
 
 $('.menu-link').on('click', function(){
@@ -68,7 +65,7 @@ if (windowWidth>=windowHeight){
   $('.home').css("height","100vh");
   portraitMode();
 }
-// get the window width every time when we change window size!
+
 $(window).resize(function(){
   const windowWidth = $(window).width();
   const windowHeight = $(window).height();
@@ -83,19 +80,19 @@ $(window).resize(function(){
 });
 
 
-// 1. whenever we click a .js-scroll link, we want to run a function
-// 2. we want to stop the link from jumping straight to our section (its default behaviour)
-// 3. we want to find out the href attribute, and then grab that element
+// 1. whenever click a .js-scroll link, we want to run a function
+// 2. stop the link from jumping straight to our section (its default behaviour)
+// 3. find out the href attribute, and then grab that element
 // 4. then scroll to it using scrollIntoView
 // ↓↓↓ jQuery way:
 $('.js-scroll').on('click',function(){
   const href = $(this).attr('href');
-  //console.log(href);
   document.querySelector(href).scrollIntoView({
     behavior: 'smooth'
   });
   return false;
 });
+// JavaScript:
 // const scrollLinks = document.querySelectorAll('.js-scroll');
 // scrollLinks.forEach(link => {
 //   link.addEventListener('click', (event)=>{
@@ -171,17 +168,11 @@ $(function(){
 
   var nextSlide = function(){
     currentSlide = currentSlide + 1;
-    // if(currentSlide >= totalSlides){
-    //   currentSlide = 0;
-    // }
     moveSlide(currentSlide);
   };
 
   var previousSlide = function(){
     currentSlide = currentSlide - 1;
-    // if(currentSlide<0){
-    //   currentSlide = totalSlides - 1;
-    // }
     moveSlide(currentSlide);
   };
 
@@ -190,8 +181,6 @@ $(function(){
   },4000); //every 4s
 
   $('.next').on('click', function(){
-    // this is going to cancel our autoSlide interval function
-    // when user has taken over control of the slidesow
     clearInterval(autoSlide);
     nextSlide();
   });

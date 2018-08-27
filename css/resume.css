@@ -13,7 +13,6 @@ body{
 }
 
 .container-r{
-  /* max-width:960px; */
   max-width:85vw;
   margin-left: auto;
   margin-right: auto;
@@ -51,7 +50,6 @@ header a:hover{
 .resume-title h1{
   font-size: 7vw;
   padding-bottom: 8px;
-  /* text-align: right; */
 }
 
 .name h1{
@@ -102,7 +100,7 @@ footer{
   height:10vw;
 }
 
-
+/* Responsive */
 @media only screen
   and (orientation: portrait) {
 

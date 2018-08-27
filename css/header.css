@@ -61,12 +61,10 @@ header{
   padding:1vw;
 }
 
-
 .menu-toggle{
   position:fixed;
   top:1.8vw;
   left:1.5vw;
-  /* position:absolute; */
   z-index:7;
   /* invert the color of image */
   filter: invert(100%);
@@ -74,7 +72,6 @@ header{
 
 .menu{
   background-color: #0096d6;
-  /* background-color: #004065; */
   width:35vw;
   min-width: 20rem;
   position:fixed;

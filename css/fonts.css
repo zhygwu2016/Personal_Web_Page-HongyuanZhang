@@ -29,18 +29,6 @@
   font-weight: normal;
 }
 
-/* .regular {
-  font-family: 'HK-Grotesk-Regular', sans-serif;
-}
-
-.medium {
-  font-family: 'HK-Grotesk-Medium', sans-serif;
-}
-
-.bold {
-  font-family: 'HK-Grotesk-Bold', sans-serif;
-} */
-
 html {
 	/* this smooths our fonts nicely on higher density screens */
   -webkit-font-smoothing: antialiased;
