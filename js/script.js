@@ -1,3 +1,8 @@
+$(window).on("load", function() {
+  // weave your magic here.
+  alert("Images are ready");
+});
+
 $("#home-background > div:gt(0)").hide();
 setInterval(function() {
   $('#home-background > div:first')
