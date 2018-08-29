@@ -54,7 +54,7 @@ header{
   /* -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #fff; */
-  font-size:8vw;
+  font-size:14vh;
 }
 
 .home-title h1{
@@ -99,12 +99,12 @@ header{
 }
 
 .navigation a{
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: 700;
   text-decoration: none;
   color:#fff;
   display:block;
-  margin-bottom:3.2vh;
+  margin-bottom:3.5vh;
 }
 
 .menu-link{

@@ -1,7 +1,6 @@
-$(window).on("load", function() {
-  // weave your magic here.
-  alert("Images are ready");
-});
+// $(window).on("load", function() {
+//   alert("Images are ready");
+// });
 
 $("#home-background > div:gt(0)").hide();
 setInterval(function() {
@@ -168,7 +167,7 @@ $(function(){
   // $('.dot').css("bottom", stepsBottom + "px");
   $('.prev').css("top", 0.5 * slideshowResHeight + "px");
   $('.next').css("top", 0.5 * slideshowResHeight + "px");
-  $('.click-for-more').css("top", slideshowResHeight+45 + "px");
+  $('.click-for-more').css("top", slideshowResHeight+20 + "px");
 
 
   var currentSlide = 0;
@@ -249,7 +248,7 @@ $(function(){
     // $('.dot').css("bottom", stepsBottom + "px");
     $('.prev').css("top", 0.5 * slideshowResHeight + "px");
     $('.next').css("top", 0.5 * slideshowResHeight + "px");
-    $('.click-for-more').css("top", slideshowResHeight+45 + "px");
+    $('.click-for-more').css("top", slideshowResHeight+20 + "px");
   });
 
 });

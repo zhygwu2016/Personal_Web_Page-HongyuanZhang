@@ -70,7 +70,7 @@ body{
   font-size: 8vw;
   font-family: 'HK-Grotesk-Bold', sans-serif;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0.25vw;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #fff;
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -230,7 +230,7 @@ body{
 }
 
 .book-image{
-  padding:1rem 1rem 3rem 0;
+  padding:0 1rem 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,11 +238,11 @@ body{
 
 .book-image img{
   /* height: 100%; */
-  max-height:50vh;
+  max-height:45vh;
 }
 
 .book-details{
-  padding:1rem 0 1rem 1rem;
+  padding:0 0 1rem 1rem;
 }
 
 .book-introduction{
@@ -303,7 +303,7 @@ body{
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  padding-top: 2rem;
+  padding-top: 0;
   padding-bottom: 2rem;
   color:#fff;
 }
@@ -328,7 +328,7 @@ body{
 .links-1 a, .links-2 a{
   text-decoration: none;
   width:25%;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .links-1 p, .links-2 p{
