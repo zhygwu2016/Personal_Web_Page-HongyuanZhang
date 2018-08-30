@@ -75,7 +75,7 @@ header a:hover{
 
 h2{
   font-size: 3vw;
-  border-bottom: 3px solid var(--red);
+  border-bottom: 5px solid var(--red);
   margin-top: 1.5vw;
   margin-bottom: 1vw;
 }
