@@ -5,7 +5,7 @@
 body{
   font-size: 1.4vw;
   font-family: 'Hammersmith One', sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .clearfix{
@@ -13,7 +13,7 @@ body{
 }
 
 .container-r{
-  max-width:85vw;
+  max-width:80vw;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2vw;
@@ -76,8 +76,8 @@ header a:hover{
 h2{
   font-size: 3vw;
   border-bottom: 5px solid var(--red);
-  margin-top: 1.5vw;
-  margin-bottom: 1vw;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
 }
 
 .bullet{
@@ -86,6 +86,10 @@ h2{
   list-style-position: inside;
   padding-left: 4vw;
   text-indent: -2vw;
+}
+
+.gap{
+  margin: 3vh 0;
 }
 
 .lists{
@@ -112,5 +116,9 @@ footer{
   }
   header a{
     font-size: 3vw;
+  }
+
+  .gap{
+    margin: 1vh 0;
   }
 }
